@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Trabalho Escolar</title>
+    <style>
+        /* Estilos CSS podem ser adicionados aqui */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Trabalho Escolar</h1>
+    </header>
+    <div class="container">
+        <h2>Sobre o Meu Trabalho Escolar</h2>
+        <p>Este é um site simples criado para o meu trabalho escolar. Você pode adicionar mais informações, imagens e links conforme necessário.</p>
+
+        <h2>Conteúdo Principal</h2>
+        <p>Aqui você pode adicionar informações relevantes para o seu trabalho escolar.</p>
+    </div>
+</body>
+</html>
