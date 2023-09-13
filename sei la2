@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Escola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Alunos</h1>
+    </header>
+    <main id="alunos-list">
+        <!-- Conteúdo gerado dinamicamente pelo JavaScript -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+// Nomes fictícios de alunos
+const alunos = [
+    { nome: "Ana", imagem: "imagem1.jpg" },
+    { nome: "Pedro", imagem: "imagem2.jpg" },
+    { nome: "Maria", imagem: "imagem3.jpg" },
+    // Adicione mais nomes e imagens aqui
+];
+
+const alunosList = document.getElementById("alunos-list");
+
+// Função para gerar o conteúdo da lista de alunos
+function criarListaDeAlunos() {
+    alunosList.innerHTML = "";
+
+    alunos.forEach((aluno) => {
+        const card = document.createElement("div");
+        card.classList.add("aluno-card");
+
+        const imagem = document.createElement("img");
+        imagem.src = aluno.imagem;
+        imagem.alt = aluno.nome;
+
+        const nome = document.createElement("h2");
+        nome.textContent = aluno.nome;
+
+        card.appendChild(imagem);
+        card.appendChild(nome);
+
+        alunosList.appendChild(card);
+    });
+}
+
+// Chame a função para criar a lista de alunos quando a página for carregada
+window.onload = criarListaDeAlunos;
